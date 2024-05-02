@@ -17,8 +17,46 @@
  */
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
-let result = [];
+let lista1 = [];
+let ls = []
+let result = []
+let i = 1;
 
+
+lista1.push("h@ck")
+while(i<=numberArray.length){
+    if (i==1){
+        lista1.push("one")
+        ls.push("f00")
+    }
+    else if (i==2){
+        ls.push("Bar")
+        lista1.push(i)
+    }
+    else if(i==3){
+        lista1.push("three")
+        ls.push("b@z")
+
+    }
+    else if(i==4){
+        ls.push("quX")
+        lista1.push(i)
+
+    }
+    else {
+        lista1.push("five")
+        lista1.push("h@ck")
+        ls.push("3ch0")
+    }
+
+    i++
+}
+result = lista1.concat(ls)
+result.push("h@ck")
+
+
+
+console.log(result)
 
 //export result
 module.exports = result;

@@ -9,8 +9,26 @@
  * output => ["b@r","b@z","QUX"]   
  */
 let arr = ["foo","bar","baz","qux","echo"];
-let result = [];
+let i = 0
+let result = []
 
 
+while(i<=5){
+    
+    if (i == 1 ||i==2){
+            
+        result.push(arr[i][0]+"@"+arr[i][2]);
+    } 
+    else if (i === 3){
+        
+       result.push(arr[i].toUpperCase());
+    }
+    else{
+
+    }
+    i++
+}
+
+console.log(result)
 //export result
 module.exports = result;
